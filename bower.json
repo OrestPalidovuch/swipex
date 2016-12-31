@@ -1,0 +1,17 @@
+{
+  "name": "swipex",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "palidovych <@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/OrestPalidovuch/OrestPalidovuch.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

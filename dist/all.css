@@ -1,0 +1,8 @@
+body{
+	border-radius: 5px;
+	background: -webkit-linear-gradient(top,left,red);
+	background: linear-gradient(top,left,red)
+}
+body{
+	font-size: 8px;
+}
