@@ -7,11 +7,97 @@ html
 		link(rel='stylesheet', type='text/css', href='../bower_components/jquery/dist/jquery.min.js')
 		link(href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic', rel='stylesheet', type='text/css')
 		link(rel='stylesheet', type='text/css', href='../css/style.css')
-		link(rel='stylesheet', type='text/css', href='../css/del.css')
 		script(src='../bower_components/jquery/dist/jquery.min.js')
 	body
-		.global-wrapper
+		.side-modal.left
+			div
+				h2 Каталог товаров
+				ul
+					li
+						a Топки и топки инсерты
+					li
+						a Камины
+					li
+						a Дровяные печи
+					li
+						a Дымоходы
+			div
+				h2 Личный кабинет
+				ul
+					li
+						a Личный кабинет
+					li
+						a История заказов
+					li
+						a Избранное
+			div
+				h2 Контакти
+				ul
+					li
+						a Контакти
+					li
+						a О нас
+					li
+						a Команда
+			div
+				h2 Полезная информация
+				ul
+					li
+						a Оплата и доставка
+					li
+						a Возврат товара
+					li
+						a Монтаж
+					li
+						a Новости
+		.side-modal.right
+			.mobile_busket-header
+				span В корзине 2 товара
+			.mobile_busket-body
+				.busket_item
+					.img-wrap
+						img(src='../img/images/1_1.png')
+					.busket_item-caption
+						span Модель 898722 
+						span SUPRAVISION 267/269
+					.price
+						span Итого
+						span 22 500 руб.
+					.btn_close
+						span
+						span
+				.busket_item
+					.img-wrap
+						img(src='../img/images/1_1.png')
+					.busket_item-caption
+						span Модель 898722 
+						span SUPRAVISION 267/269
+					.price
+						span Итого
+						span 22 500 руб.
+					.btn_close
+						span
+						span
+			.mobile_busket-footer
+				span Сумма товаров
+				span 45 000 руб.
+			.submit_wrap
+				a ОФОРМИТЬ ЗАКАЗ
+		
+		.global-wrapper 															
 			header
+				.menu_trigger.visible-xs
+					span
+					span
+					span
+				.btn_close.left
+					span
+					span
+				.busket_trigger.visible-xs
+					i.ico.ico-busket
+				.btn_close.right
+						span
+						span
 				.container
 					a.logo
 					nav.main_nav
@@ -42,6 +128,7 @@ html
 				.container
 					.navigation_form
 						form
+							i.ico.ico-search(url='../img/ico-sprite-2x.png')
 							input(type='text', placeholder='Найти')
 							button(type='submit') НАЙТИ
 					.product
@@ -574,8 +661,6 @@ html
 									a(data-slide-to="1") Камины Supra
 								li
 									a(data-slide-to="2") Камины Richard Le Droff
-								li
-									a(data-slide-to="3") Камины Jotul
 								li
 									a(data-slide-to="4") Новые поступления
 								li
@@ -1110,15 +1195,13 @@ html
 							h1 Дымоходы
 							ul.asortyment
 								li
-									a(data-slide-to="1") Дымоходы Supra
+									a(data-slide-to="1") Дымоходы Uni
 								li
-									a(data-slide-to="2") Дымоходы Richard Le Droff
-								li
-									a(data-slide-to="3") Дымоходы Jotul
+									a(data-slide-to="2") Дымоходы Schiedel permeter
 								li
 									a(data-slide-to="4") Новые поступления
 								li
-									a(data-slide-to="5") Скидки на топки
+									a(data-slide-to="5") Скидки на дымоходы
 								li
 									a(data-slide-to="6") Сопутствующие товары для дымоходов
 							a Все дымоходы
@@ -1134,7 +1217,8 @@ html
 										span 18.09.2015
 								.news-box
 									.news-info
-									p 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+									p 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									p Aenean euismod bibendum
 									a ПОДРОБНЕЕ
 							.col-lg-4.col-sm-6.col-xs-12
 								.news-header
@@ -1144,7 +1228,8 @@ html
 										span 18.09.2015
 								.news-box
 									.news-info
-									p 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+									p 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									p Aenean euismod bibendum
 									a ПОДРОБНЕЕ
 							.col-lg-4.hidden-sm.hidden-xs 
 								.news-header
@@ -1156,7 +1241,55 @@ html
 									.news-info
 										p 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
 										a ПОДРОБНЕЕ
-							a Читать все новости
+							a.inline Читать все новости
+			footer
+				.container
+					.col-sm-3.col-xs-12
+						span ПОЛЕЗНАЯ ІНФОРМАЦИЯ
+						ul
+							li
+								a Оплата и доставка
+							li
+								a Возврат товара
+							li
+								a Монтаж
+							li
+								a Новости
+					.col-sm-3.col-xs-12
+						span ЛИЧНИЙ КАБИНЕТ
+						ul
+							li
+								a Личный Кабинет
+							li
+								a История заказов
+							li
+								a Избранное
+					.col-sm-3.col-xs-12
+						span КОНТАКТИ
+						ul
+							li
+								a.contact 8 (495) 374-66-54
+								i.ico.ico-tel
+							li
+								a.contact 8 (800) 333-66-84
+								i.ico.ico-tel
+							li
+								a.contact 8:30 - 18:00 Ежедневно
+								i.ico.ico-clock
+							li
+								a.contact info@pechi-tut.ru
+								i.ico.ico-messege
+					.col-sm-3.col-xs-12
+						span АДРЕС
+						ul
+							i.ico.ico-loc
+							li.address Москва, 41 км МКАД,
+							li.address ТОГК "Славянский Мир",
+							li.address Павильон Г17/3
+					.col-xs-12
+						div#map
+					.col-xs-12
+						span.foot © Suprafire.ru 2015
 		script(src='../js/main.js')
 
 

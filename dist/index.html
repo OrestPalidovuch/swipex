@@ -7,12 +7,70 @@
     <link rel="stylesheet" type="text/css" href="../bower_components/jquery/dist/jquery.min.js">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300,400italic,500,500italic,700,700italic,900,900italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/del.css">
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
   </head>
   <body>
-    <div class="global-wrapper">
+    <div class="side-modal left">
+      <div>
+        <h2>Каталог товаров</h2>
+        <ul>
+          <li><a>Топки и топки инсерты</a></li>
+          <li><a>Камины</a></li>
+          <li><a>Дровяные печи</a></li>
+          <li><a>Дымоходы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Личный кабинет</h2>
+        <ul>
+          <li><a>Личный кабинет</a></li>
+          <li><a>История заказов</a></li>
+          <li><a>Избранное</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Контакти</h2>
+        <ul>
+          <li><a>Контакти</a></li>
+          <li><a>О нас</a></li>
+          <li><a>Команда</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Полезная информация</h2>
+        <ul>
+          <li><a>Оплата и доставка</a></li>
+          <li><a>Возврат товара</a></li>
+          <li><a>Монтаж</a></li>
+          <li><a>Новости</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="side-modal right">
+      <div class="mobile_busket-header"><span>В корзине 2 товара</span></div>
+      <div class="mobile_busket-body">
+        <div class="busket_item">
+          <div class="img-wrap"><img src="../img/images/1_1.png"></div>
+          <div class="busket_item-caption"><span>Модель 898722 </span><span>SUPRAVISION 267/269</span></div>
+          <div class="price"><span>Итого</span><span>22 500 руб.</span></div>
+          <div class="btn_close"><span></span><span></span></div>
+        </div>
+        <div class="busket_item">
+          <div class="img-wrap"><img src="../img/images/1_1.png"></div>
+          <div class="busket_item-caption"><span>Модель 898722 </span><span>SUPRAVISION 267/269</span></div>
+          <div class="price"><span>Итого</span><span>22 500 руб.</span></div>
+          <div class="btn_close"><span></span><span></span></div>
+        </div>
+      </div>
+      <div class="mobile_busket-footer"><span>Сумма товаров</span><span>45 000 руб.</span></div>
+      <div class="submit_wrap"><a>ОФОРМИТЬ ЗАКАЗ</a></div>
+    </div>
+    <div class="global-wrapper">															
       <header>
+        <div class="menu_trigger visible-xs"><span></span><span></span><span></span></div>
+        <div class="btn_close left"><span></span><span></span></div>
+        <div class="busket_trigger visible-xs"><i class="ico ico-busket"></i></div>
+        <div class="btn_close right"><span></span><span></span></div>
         <div class="container"><a class="logo"></a>
           <nav class="main_nav">
             <ul class="float_list">
@@ -35,7 +93,7 @@
       <main>
         <div class="container">
           <div class="navigation_form">
-            <form>
+            <form><i url="../img/ico-sprite-2x.png" class="ico ico-search"></i>
               <input type="text" placeholder="Найти">
               <button type="submit">НАЙТИ</button>
             </form>
@@ -473,7 +531,6 @@
               <ul class="asortyment">
                 <li><a data-slide-to="1">Камины Supra</a></li>
                 <li><a data-slide-to="2">Камины Richard Le Droff</a></li>
-                <li><a data-slide-to="3">Камины Jotul</a></li>
                 <li><a data-slide-to="4">Новые поступления</a></li>
                 <li><a data-slide-to="5">Скидки на камины</a></li>
                 <li><a data-slide-to="6">Сопутствующие товары для каминов</a></li>
@@ -911,11 +968,10 @@
             <div class="prod_l_name">
               <h1>Дымоходы</h1>
               <ul class="asortyment">
-                <li><a data-slide-to="1">Дымоходы Supra</a></li>
-                <li><a data-slide-to="2">Дымоходы Richard Le Droff</a></li>
-                <li><a data-slide-to="3">Дымоходы Jotul</a></li>
+                <li><a data-slide-to="1">Дымоходы Uni</a></li>
+                <li><a data-slide-to="2">Дымоходы Schiedel permeter</a></li>
                 <li><a data-slide-to="4">Новые поступления</a></li>
-                <li><a data-slide-to="5">Скидки на топки</a></li>
+                <li><a data-slide-to="5">Скидки на дымоходы</a></li>
                 <li><a data-slide-to="6">Сопутствующие товары для дымоходов</a></li>
               </ul><a>Все дымоходы</a>
             </div>
@@ -931,7 +987,8 @@
                 </div>
                 <div class="news-box">
                   <div class="news-info"></div>
-                  <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum</p><a>ПОДРОБНЕЕ</a>
+                  <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Aenean euismod bibendum</p><a>ПОДРОБНЕЕ</a>
                 </div>
               </div>
               <div class="col-lg-4 col-sm-6 col-xs-12">
@@ -940,7 +997,8 @@
                 </div>
                 <div class="news-box">
                   <div class="news-info"></div>
-                  <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum</p><a>ПОДРОБНЕЕ</a>
+                  <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p>Aenean euismod bibendum</p><a>ПОДРОБНЕЕ</a>
                 </div>
               </div>
               <div class="col-lg-4 hidden-sm hidden-xs"> 
@@ -952,11 +1010,51 @@
                     <p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.Proin gravida dolor sit amet lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum</p><a>ПОДРОБНЕЕ</a>
                   </div>
                 </div>
-              </div><a>Читать все новости</a>
+              </div><a class="inline">Читать все новости</a>
             </div>
           </div>
         </div>
       </main>
+      <footer>
+        <div class="container">
+          <div class="col-sm-3 col-xs-12"><span>ПОЛЕЗНАЯ ІНФОРМАЦИЯ</span>
+            <ul>
+              <li><a>Оплата и доставка</a></li>
+              <li><a>Возврат товара</a></li>
+              <li><a>Монтаж</a></li>
+              <li><a>Новости</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-12"><span>ЛИЧНИЙ КАБИНЕТ</span>
+            <ul>
+              <li><a>Личный Кабинет</a></li>
+              <li><a>История заказов</a></li>
+              <li><a>Избранное</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-12"><span>КОНТАКТИ</span>
+            <ul>
+              <li><a class="contact">8 (495) 374-66-54</a><i class="ico ico-tel"></i></li>
+              <li><a class="contact">8 (800) 333-66-84</a><i class="ico ico-tel"></i></li>
+              <li><a class="contact">8:30 - 18:00 Ежедневно</a><i class="ico ico-clock"></i></li>
+              <li><a class="contact">info@pechi-tut.ru</a><i class="ico ico-messege"></i></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-xs-12"><span>АДРЕС</span>
+            <ul><i class="ico ico-loc"></i>
+              <li class="address">Москва, 41 км МКАД,</li>
+              <li class="address">ТОГК "Славянский Мир",</li>
+              <li class="address">Павильон Г17/3</li>
+            </ul>
+          </div>
+          <div class="col-xs-12">
+            <div id="map">
+                <iframe src="https://api-maps.yandex.ua/frame/v1/-/CZTgeOkc" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="col-xs-12"><span class="foot">© Suprafire.ru 2015</span></div>
+        </div>
+      </footer>
     </div>
     <script src="../js/main.js"></script>
   </body>
